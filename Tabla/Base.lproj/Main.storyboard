@@ -1,26 +1,106 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ygk-Yl-1R3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Baya-->
+        <scene sceneID="3JX-aF-iXF">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0sp-4X-ehl" customClass="largeTablaViewController" customModule="Tabla" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="JJJ-1n-URG"/>
+                        <viewControllerLayoutGuide type="bottom" id="xNU-o9-ZwF"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="xEE-KN-xur">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JMq-Rs-jx3" customClass="largeTablaHeadView" customModule="Tabla" customModuleProvider="target">
+                                <rect key="frame" x="16" y="28" width="343" height="530"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MVQ-Rq-99U">
+                                <rect key="frame" x="14" y="566" width="347" height="31"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xNU-o9-ZwF" firstAttribute="top" secondItem="MVQ-Rq-99U" secondAttribute="bottom" constant="22" id="67Q-rZ-0IQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JMq-Rs-jx3" secondAttribute="trailing" id="cEM-Fu-XvN"/>
+                            <constraint firstItem="JMq-Rs-jx3" firstAttribute="top" secondItem="JJJ-1n-URG" secondAttribute="bottom" constant="8" id="duH-Ta-gus"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MVQ-Rq-99U" secondAttribute="leading" id="gQI-x3-par"/>
+                            <constraint firstItem="MVQ-Rq-99U" firstAttribute="top" secondItem="JMq-Rs-jx3" secondAttribute="bottom" constant="8" id="icg-wP-13n"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="JMq-Rs-jx3" secondAttribute="leading" id="pet-6b-kMQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MVQ-Rq-99U" secondAttribute="trailing" id="vha-dW-Uy0"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Baya" id="NNT-Rq-lt5"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="al5-MP-hCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="581.60000000000002" y="154.27286356821591"/>
+        </scene>
+        <!--Daya-->
+        <scene sceneID="crf-wP-HKO">
+            <objects>
+                <viewController id="wT3-Jz-leb" customClass="smallTablaViewController" customModule="Tabla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="laX-86-db7"/>
+                        <viewControllerLayoutGuide type="bottom" id="atL-zI-xJW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RgI-31-Mla">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gu0-BA-g1q" customClass="smallTablaHeadView" customModule="Tabla" customModuleProvider="target">
+                                <rect key="frame" x="16" y="28" width="343" height="530"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rwr-eC-O2k">
+                                <rect key="frame" x="14" y="568" width="347" height="31"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="rwr-eC-O2k" secondAttribute="leading" id="VQU-Mc-8gG"/>
+                            <constraint firstItem="gu0-BA-g1q" firstAttribute="top" secondItem="laX-86-db7" secondAttribute="bottom" constant="8" id="XHY-4A-QsH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gu0-BA-g1q" secondAttribute="leading" id="aPD-1p-532"/>
+                            <constraint firstItem="rwr-eC-O2k" firstAttribute="top" secondItem="gu0-BA-g1q" secondAttribute="bottom" constant="10" id="d7W-kE-gRc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rwr-eC-O2k" secondAttribute="trailing" id="rGw-9U-zMq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gu0-BA-g1q" secondAttribute="trailing" id="sUd-Lq-sd0"/>
+                            <constraint firstItem="atL-zI-xJW" firstAttribute="top" secondItem="rwr-eC-O2k" secondAttribute="bottom" constant="20" id="zb4-Ea-Q3P"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Daya" id="vjf-ix-gd7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5U-ks-gCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="-499.70014992503752"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="ppd-wd-455">
+            <objects>
+                <tabBarController id="ygk-Yl-1R3" customClass="TabBarViewController" customModule="Tabla" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Fm8-13-rNx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wT3-Jz-leb" kind="relationship" relationship="viewControllers" id="qHw-oz-JZg"/>
+                        <segue destination="0sp-4X-ehl" kind="relationship" relationship="viewControllers" id="7Gg-hF-4ua"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWS-gv-njc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-371" y="-172"/>
         </scene>
     </scenes>
 </document>

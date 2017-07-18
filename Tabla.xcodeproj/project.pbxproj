@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7D40C59E1F1EA2E200BFA229 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40C59D1F1EA2E200BFA229 /* AppDelegate.swift */; };
-		7D40C5A01F1EA2E200BFA229 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40C59F1F1EA2E200BFA229 /* ViewController.swift */; };
-		7D40C5A31F1EA2E200BFA229 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D40C5A11F1EA2E200BFA229 /* Main.storyboard */; };
 		7D40C5A51F1EA2E200BFA229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D40C5A41F1EA2E200BFA229 /* Assets.xcassets */; };
 		7D40C5A81F1EA2E200BFA229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D40C5A61F1EA2E200BFA229 /* LaunchScreen.storyboard */; };
 		7D40C5B31F1EA2E200BFA229 /* TablaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40C5B21F1EA2E200BFA229 /* TablaTests.swift */; };
 		7D40C5BE1F1EA2E200BFA229 /* TablaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40C5BD1F1EA2E200BFA229 /* TablaUITests.swift */; };
+		7D7FA4911F1EA61B0072C868 /* smallTablaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FA4901F1EA61B0072C868 /* smallTablaViewController.swift */; };
+		7D7FA4931F1EA6330072C868 /* largeTablaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FA4921F1EA6330072C868 /* largeTablaViewController.swift */; };
+		7D7FA4951F1EA69F0072C868 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FA4941F1EA69F0072C868 /* TabBarViewController.swift */; };
+		7D7FA4981F1EA7250072C868 /* smallTablaHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FA4971F1EA7250072C868 /* smallTablaHeadView.swift */; };
+		7D7FA49A1F1EAD200072C868 /* largeTablaHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FA4991F1EAD200072C868 /* largeTablaHeadView.swift */; };
+		7D7FA49C1F1EAD480072C868 /* TablaHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7FA49B1F1EAD480072C868 /* TablaHeadView.swift */; };
+		7D7FA49F1F1EB5F90072C868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D7FA49D1F1EB5F90072C868 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +41,6 @@
 /* Begin PBXFileReference section */
 		7D40C59A1F1EA2E200BFA229 /* Tabla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D40C59D1F1EA2E200BFA229 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D40C59F1F1EA2E200BFA229 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D40C5A21F1EA2E200BFA229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D40C5A41F1EA2E200BFA229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D40C5A71F1EA2E200BFA229 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D40C5A91F1EA2E200BFA229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +50,13 @@
 		7D40C5B91F1EA2E200BFA229 /* TablaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TablaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D40C5BD1F1EA2E200BFA229 /* TablaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablaUITests.swift; sourceTree = "<group>"; };
 		7D40C5BF1F1EA2E200BFA229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D7FA4901F1EA61B0072C868 /* smallTablaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = smallTablaViewController.swift; path = ../smallTablaViewController.swift; sourceTree = "<group>"; };
+		7D7FA4921F1EA6330072C868 /* largeTablaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = largeTablaViewController.swift; sourceTree = "<group>"; };
+		7D7FA4941F1EA69F0072C868 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = ../TabBarViewController.swift; sourceTree = "<group>"; };
+		7D7FA4971F1EA7250072C868 /* smallTablaHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = smallTablaHeadView.swift; sourceTree = "<group>"; };
+		7D7FA4991F1EAD200072C868 /* largeTablaHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = largeTablaHeadView.swift; sourceTree = "<group>"; };
+		7D7FA49B1F1EAD480072C868 /* TablaHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablaHeadView.swift; sourceTree = "<group>"; };
+		7D7FA49E1F1EB5F90072C868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,9 @@
 		7D40C59C1F1EA2E200BFA229 /* Tabla */ = {
 			isa = PBXGroup;
 			children = (
-				7D40C59F1F1EA2E200BFA229 /* ViewController.swift */,
-				7D40C5A11F1EA2E200BFA229 /* Main.storyboard */,
+				7D7FA4961F1EA6EC0072C868 /* View Controllers */,
+				7D7FA4A01F1EB6CC0072C868 /* Views */,
+				7D7FA49D1F1EB5F90072C868 /* Main.storyboard */,
 				7D40C5CB1F1EA2F200BFA229 /* Supporting Files */,
 			);
 			path = Tabla;
@@ -131,6 +142,26 @@
 				7D40C5A91F1EA2E200BFA229 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D7FA4961F1EA6EC0072C868 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FA4941F1EA69F0072C868 /* TabBarViewController.swift */,
+				7D7FA4921F1EA6330072C868 /* largeTablaViewController.swift */,
+				7D7FA4901F1EA61B0072C868 /* smallTablaViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		7D7FA4A01F1EB6CC0072C868 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D7FA4991F1EAD200072C868 /* largeTablaHeadView.swift */,
+				7D7FA4971F1EA7250072C868 /* smallTablaHeadView.swift */,
+				7D7FA49B1F1EAD480072C868 /* TablaHeadView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +274,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7FA49F1F1EB5F90072C868 /* Main.storyboard in Resources */,
 				7D40C5A81F1EA2E200BFA229 /* LaunchScreen.storyboard in Resources */,
 				7D40C5A51F1EA2E200BFA229 /* Assets.xcassets in Resources */,
-				7D40C5A31F1EA2E200BFA229 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D40C5A01F1EA2E200BFA229 /* ViewController.swift in Sources */,
+				7D7FA4951F1EA69F0072C868 /* TabBarViewController.swift in Sources */,
+				7D7FA4911F1EA61B0072C868 /* smallTablaViewController.swift in Sources */,
+				7D7FA4981F1EA7250072C868 /* smallTablaHeadView.swift in Sources */,
+				7D7FA49A1F1EAD200072C868 /* largeTablaHeadView.swift in Sources */,
+				7D7FA49C1F1EAD480072C868 /* TablaHeadView.swift in Sources */,
 				7D40C59E1F1EA2E200BFA229 /* AppDelegate.swift in Sources */,
+				7D7FA4931F1EA6330072C868 /* largeTablaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,20 +343,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7D40C5A11F1EA2E200BFA229 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D40C5A21F1EA2E200BFA229 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7D40C5A61F1EA2E200BFA229 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7D40C5A71F1EA2E200BFA229 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7D7FA49D1F1EB5F90072C868 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D7FA49E1F1EB5F90072C868 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -522,6 +558,7 @@
 				7D40C5C41F1EA2E200BFA229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D40C5C51F1EA2E200BFA229 /* Build configuration list for PBXNativeTarget "TablaTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +567,7 @@
 				7D40C5C71F1EA2E200BFA229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D40C5C81F1EA2E200BFA229 /* Build configuration list for PBXNativeTarget "TablaUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +576,7 @@
 				7D40C5CA1F1EA2E200BFA229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
