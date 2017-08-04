@@ -1,19 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ygk-Yl-1R3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ygk-Yl-1R3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Touch Patterns-->
+        <scene sceneID="HGz-j0-kJ5">
+            <objects>
+                <viewController id="Pkt-Q0-4db" customClass="InfoViewController" customModule="Tabla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xdw-2Z-5Mh"/>
+                        <viewControllerLayoutGuide type="bottom" id="4oG-C6-3Yt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R3L-qt-TsN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="one finger tap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXL-y8-4yu">
+                                <rect key="frame" x="83" y="382" width="209" height="45.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phE-k7-HCE">
+                                <rect key="frame" x="157" y="313" width="61" height="40"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q34-44-dTQ">
+                                <rect key="frame" x="16" y="66" width="343" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q34-44-dTQ" firstAttribute="top" secondItem="xdw-2Z-5Mh" secondAttribute="bottom" constant="46" id="2WU-lf-wMU"/>
+                            <constraint firstItem="hXL-y8-4yu" firstAttribute="centerX" secondItem="R3L-qt-TsN" secondAttribute="centerX" id="7PQ-mL-ePU"/>
+                            <constraint firstItem="phE-k7-HCE" firstAttribute="top" secondItem="q34-44-dTQ" secondAttribute="bottom" constant="31" id="9wa-pQ-AJu"/>
+                            <constraint firstItem="phE-k7-HCE" firstAttribute="centerX" secondItem="R3L-qt-TsN" secondAttribute="centerX" id="Zd7-1O-mt2"/>
+                            <constraint firstItem="hXL-y8-4yu" firstAttribute="top" secondItem="phE-k7-HCE" secondAttribute="bottom" constant="29" id="mVT-Ga-cre"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="q34-44-dTQ" secondAttribute="leading" id="pRg-df-BUE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q34-44-dTQ" secondAttribute="trailing" id="tGx-8k-QkG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Touch Patterns" id="Wgl-df-iEz"/>
+                    <connections>
+                        <outlet property="fingerPatternLabel" destination="hXL-y8-4yu" id="Yll-lV-orQ"/>
+                        <outlet property="tablaHitName" destination="q34-44-dTQ" id="pBz-Q2-sXF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mvm-N0-eBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101.59999999999999" y="666.11694152923542"/>
+        </scene>
         <!--Baya-->
         <scene sceneID="3JX-aF-iXF">
             <objects>
-                <viewController id="0sp-4X-ehl" customClass="largeTablaViewController" customModule="Tabla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0sp-4X-ehl" customClass="Baya" customModule="Tabla" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JJJ-1n-URG"/>
                         <viewControllerLayoutGuide type="bottom" id="xNU-o9-ZwF"/>
@@ -23,34 +72,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="JMq-Rs-jx3" customClass="largeTablaHeadView" customModule="Tabla" customModuleProvider="target">
-                                <rect key="frame" x="16" y="28" width="343" height="530"/>
+                                <rect key="frame" x="16" y="28" width="343" height="582"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lgi-T5-SUm" appends="YES" id="n5I-9T-9bR"/>
+                                    <outletCollection property="gestureRecognizers" destination="CRt-sF-eBQ" appends="YES" id="Zpj-1l-E2e"/>
+                                </connections>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="MVQ-Rq-99U">
-                                <rect key="frame" x="14" y="566" width="347" height="31"/>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xNU-o9-ZwF" firstAttribute="top" secondItem="MVQ-Rq-99U" secondAttribute="bottom" constant="22" id="67Q-rZ-0IQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JMq-Rs-jx3" secondAttribute="trailing" id="cEM-Fu-XvN"/>
-                            <constraint firstItem="JMq-Rs-jx3" firstAttribute="top" secondItem="JJJ-1n-URG" secondAttribute="bottom" constant="8" id="duH-Ta-gus"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="MVQ-Rq-99U" secondAttribute="leading" id="gQI-x3-par"/>
-                            <constraint firstItem="MVQ-Rq-99U" firstAttribute="top" secondItem="JMq-Rs-jx3" secondAttribute="bottom" constant="8" id="icg-wP-13n"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="JMq-Rs-jx3" secondAttribute="leading" id="pet-6b-kMQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MVQ-Rq-99U" secondAttribute="trailing" id="vha-dW-Uy0"/>
+                            <constraint firstItem="xNU-o9-ZwF" firstAttribute="top" secondItem="JMq-Rs-jx3" secondAttribute="bottom" constant="8" id="NKY-JE-d1w"/>
+                            <constraint firstItem="JMq-Rs-jx3" firstAttribute="top" secondItem="JJJ-1n-URG" secondAttribute="bottom" constant="8" id="S3q-B2-abD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="JMq-Rs-jx3" secondAttribute="leading" id="ZDU-e5-uuO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JMq-Rs-jx3" secondAttribute="trailing" id="ai8-TH-Vpy"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Baya" id="NNT-Rq-lt5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="al5-MP-hCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lgi-T5-SUm">
+                    <connections>
+                        <action selector="handleSingleTap:" destination="0sp-4X-ehl" id="cF8-hL-fbD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTouchesRequired="4" id="CRt-sF-eBQ">
+                    <connections>
+                        <action selector="handleFourTap:" destination="0sp-4X-ehl" id="bIm-On-UCE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="581.60000000000002" y="154.27286356821591"/>
         </scene>
         <!--Daya-->
         <scene sceneID="crf-wP-HKO">
             <objects>
-                <viewController id="wT3-Jz-leb" customClass="smallTablaViewController" customModule="Tabla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wT3-Jz-leb" customClass="Daya" customModule="Tabla" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="laX-86-db7"/>
                         <viewControllerLayoutGuide type="bottom" id="atL-zI-xJW"/>
@@ -60,27 +118,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gu0-BA-g1q" customClass="smallTablaHeadView" customModule="Tabla" customModuleProvider="target">
-                                <rect key="frame" x="16" y="28" width="343" height="530"/>
+                                <rect key="frame" x="16" y="28" width="343" height="582"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Wmg-FM-pKM" appends="YES" id="Zwe-sU-S7a"/>
+                                    <outletCollection property="gestureRecognizers" destination="Lxj-u7-Ccp" appends="YES" id="0oV-cW-0Ug"/>
+                                    <outletCollection property="gestureRecognizers" destination="PiQ-gf-MXa" appends="YES" id="12m-EF-d7i"/>
+                                </connections>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rwr-eC-O2k">
-                                <rect key="frame" x="14" y="568" width="347" height="31"/>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="rwr-eC-O2k" secondAttribute="leading" id="VQU-Mc-8gG"/>
                             <constraint firstItem="gu0-BA-g1q" firstAttribute="top" secondItem="laX-86-db7" secondAttribute="bottom" constant="8" id="XHY-4A-QsH"/>
                             <constraint firstAttribute="leadingMargin" secondItem="gu0-BA-g1q" secondAttribute="leading" id="aPD-1p-532"/>
-                            <constraint firstItem="rwr-eC-O2k" firstAttribute="top" secondItem="gu0-BA-g1q" secondAttribute="bottom" constant="10" id="d7W-kE-gRc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rwr-eC-O2k" secondAttribute="trailing" id="rGw-9U-zMq"/>
+                            <constraint firstItem="atL-zI-xJW" firstAttribute="top" secondItem="gu0-BA-g1q" secondAttribute="bottom" constant="8" id="eYA-F0-VGC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gu0-BA-g1q" secondAttribute="trailing" id="sUd-Lq-sd0"/>
-                            <constraint firstItem="atL-zI-xJW" firstAttribute="top" secondItem="rwr-eC-O2k" secondAttribute="bottom" constant="20" id="zb4-Ea-Q3P"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Daya" id="vjf-ix-gd7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5U-ks-gCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Wmg-FM-pKM">
+                    <connections>
+                        <action selector="handleSingleTap:" destination="wT3-Jz-leb" id="2ap-FU-95k"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTouchesRequired="2" id="Lxj-u7-Ccp">
+                    <connections>
+                        <action selector="handleDoubleTap:" destination="wT3-Jz-leb" id="aAS-V6-kLz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTouchesRequired="3" id="PiQ-gf-MXa">
+                    <connections>
+                        <action selector="handleTripleTap:" destination="wT3-Jz-leb" id="pFt-YP-UUn"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="580" y="-499.70014992503752"/>
         </scene>
@@ -96,6 +169,7 @@
                     <connections>
                         <segue destination="wT3-Jz-leb" kind="relationship" relationship="viewControllers" id="qHw-oz-JZg"/>
                         <segue destination="0sp-4X-ehl" kind="relationship" relationship="viewControllers" id="7Gg-hF-4ua"/>
+                        <segue destination="Pkt-Q0-4db" kind="relationship" relationship="viewControllers" id="Jay-vi-oIG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wWS-gv-njc" userLabel="First Responder" sceneMemberID="firstResponder"/>

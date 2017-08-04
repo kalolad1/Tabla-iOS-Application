@@ -1,5 +1,5 @@
 //
-//  largeTablaViewController.swift
+//  Daya.swift
 //  Tabla
 //
 //  Created by Darshan Kalola on 7/18/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class largeTablaViewController: UIViewController {
+class Daya: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

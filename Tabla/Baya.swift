@@ -1,5 +1,5 @@
 //
-//  smallTablaViewController.swift
+//  Baya.swift
 //  Tabla
 //
 //  Created by Darshan Kalola on 7/18/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class smallTablaViewController: UIViewController {
+class Baya: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
